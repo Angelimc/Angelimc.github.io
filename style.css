@@ -1,17 +1,28 @@
-<!-- Navigation -->
+/*Fonts*/
 
+@font-face {
+  font-family:"Bebas Neue Regular";
+  src:url("Bebas_Neue_Regular/BebasNeue-Regular.eot?") format("eot"),
+  url("Bebas_Neue_Regular/BebasNeue-Regular.woff") format("woff"),
+  url("Bebas_Neue_Regular/BebasNeue-Regular.ttf") format("truetype"),
+  url("Bebas_Neue_Regular/BebasNeue-Regular.svg#BebasNeue-Regular") format("svg");font-weight:normal;font-style:normal;
+}
+
+
+/* Navigation */
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #333;
-  font-family: Arial;
+  background-color: #403B33;
+  font-family: 'Montserrat';
 }
 
 /* Links inside the navbar */
 .navbar a {
   float: left;
   font-size: 16px;
-  color: white;
+  font-family: 'Montserrat';
+  color: #EDEBE6;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -28,16 +39,16 @@
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: #EDEBE6;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
+  font-family: 'Montserrat'; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #AACCB1;
 }
 
 /* Dropdown content (hidden by default) */
@@ -70,27 +81,51 @@
   display: block;
 }
 
+/* Home */
+
 * {
     box-sizing: border-box;
 }
 
-<!-- Home -->
-
 .column {
     float: left;
+    font-weight: 500;
+}
+
+.name {
+  font-family: "Bebas Neue Regular";
+  font-size: 50px;
+}
+
+.description {
+  font-family: 'Montserrat';
+  font-size: 20px;
 }
 
 .left {
-    width: 60%;
+    width: 70%;
     border-right-style: solid;
+    border-right-color: #403B33;
+    text-align: center;
 }
 
 .right {
-    width: 40%;
+    width: 30%;
+    font-family: 'Montserrat';
+    font-weight: bold;
 }
 
 ul {
   list-style-type: none;
 }
 
-<!-- Projects -->
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#home a:hover {
+  color: #68B3AF;
+}
+
+/* Projects */
