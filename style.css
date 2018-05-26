@@ -1,23 +1,21 @@
-/*Fonts*/
+/* Fonts */
 
 @font-face {
-  font-family:"Bebas Neue Regular";
-  src:url("Bebas_Neue_Regular/BebasNeue-Regular.eot?") format("eot"),
-  url("Bebas_Neue_Regular/BebasNeue-Regular.woff") format("woff"),
-  url("Bebas_Neue_Regular/BebasNeue-Regular.ttf") format("truetype"),
-  url("Bebas_Neue_Regular/BebasNeue-Regular.svg#BebasNeue-Regular") format("svg");font-weight:normal;font-style:normal;
+  font-family: "Bebas Neue Regular";
+  src: url("Bebas_Neue_Regular/BebasNeue-Regular.eot?") format("eot"), url("Bebas_Neue_Regular/BebasNeue-Regular.woff") format("woff"), url("Bebas_Neue_Regular/BebasNeue-Regular.ttf") format("truetype"), url("Bebas_Neue_Regular/BebasNeue-Regular.svg#BebasNeue-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-
 /* Navigation */
-/* Navbar container */
+
 .navbar {
   overflow: hidden;
   background-color: #403B33;
   font-family: 'Montserrat';
+
 }
 
-/* Links inside the navbar */
 .navbar a {
   float: left;
   font-size: 16px;
@@ -28,13 +26,11 @@
   text-decoration: none;
 }
 
-/* The dropdown container */
 .dropdown {
   float: right;
   overflow: hidden;
 }
 
-/* Dropdown button */
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
@@ -42,26 +38,23 @@
   color: #EDEBE6;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: 'Montserrat'; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: 'Montserrat';
+  margin: 0;
 }
 
-/* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #AACCB1;
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   float: none;
   color: black;
@@ -71,12 +64,10 @@
   text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -84,12 +75,13 @@
 /* Home */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .column {
-    float: left;
-    font-weight: 500;
+  padding-top: 80px;
+  float: left;
+  font-weight: 500;
 }
 
 .name {
@@ -103,16 +95,17 @@
 }
 
 .left {
-    width: 70%;
-    border-right-style: solid;
-    border-right-color: #403B33;
-    text-align: center;
+  width: 70%;
+  border-top-right-radius: 50px;
+  border-right-style: solid;
+  border-right-color: #403B33;
+  text-align: center;
 }
 
 .right {
-    width: 30%;
-    font-family: 'Montserrat';
-    font-weight: bold;
+  width: 30%;
+  font-family: 'Montserrat';
+  font-weight: bold;
 }
 
 ul {
@@ -129,3 +122,93 @@ a {
 }
 
 /* Projects */
+
+.project {
+  align-items: center;
+  display: flex;
+}
+
+.project .image {
+  order: 1;
+  width: 35%;
+}
+
+.project .image img {
+  width: 90%;
+}
+
+.project .content {
+  padding: 32px 64px 32px 64px;
+  order: 2;
+  width: 65%;
+  font-family: 'Montserrat';
+  color: white;
+}
+
+.project .content h1 {
+  font-family: 'Bebas Neue Regular';
+  font-size: 40px;
+}
+
+.project:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.project:nth-child(1) {
+  background-color: #99B2B7;
+}
+
+.project:nth-child(2) {
+  background-color: #D9CEB2;
+}
+
+.project:nth-child(3) {
+  background-color: #D5DED9;
+}
+
+.project:nth-child(4) {
+  background-color: #948C75;
+}
+
+/* Button */
+
+.button {
+  border-radius: 4px;
+  background-color: #403B33;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+}
